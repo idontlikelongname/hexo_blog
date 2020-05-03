@@ -20,22 +20,21 @@
     var CONFIG = {"hostname":"www.yangxiaoxiao.net.cn","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="DuDuBiu的个人小站">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://www.yangxiaoxiao.net.cn/about/index.html">
+  <meta name="description" content="ReferenceNDT（Normal Distributions Transform）算法原理与公式推导 The Three-Dimensional Normal-Distributions Transform, 2009 The Normal Distribution Transform: A New Approach to Laser Scan Matching, 2003">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NDT-Normal Distribution Transform算法">
+<meta property="og:url" content="http://www.yangxiaoxiao.net.cn/2020/02/25/ndt-matcher/index.html">
 <meta property="og:site_name" content="路上捡个大西瓜">
-<meta property="og:description" content="DuDuBiu的个人小站">
+<meta property="og:description" content="ReferenceNDT（Normal Distributions Transform）算法原理与公式推导 The Three-Dimensional Normal-Distributions Transform, 2009 The Normal Distribution Transform: A New Approach to Laser Scan Matching, 2003">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-10T10:09:43.000Z">
-<meta property="article:modified_time" content="2020-02-10T10:09:43.000Z">
+<meta property="article:published_time" content="2020-02-25T01:36:08.000Z">
+<meta property="article:modified_time" content="2020-02-25T06:06:51.674Z">
 <meta property="article:author" content="Xiaoxiao Yang">
-<meta property="article:tag" content="Automative Driving">
-<meta property="article:tag" content=" Self-driving">
-<meta property="article:tag" content=" Perception">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="SLAM">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://www.yangxiaoxiao.net.cn/about/">
+<link rel="canonical" href="http://www.yangxiaoxiao.net.cn/2020/02/25/ndt-matcher/">
 
 
 <script id="page-configurations">
@@ -43,12 +42,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false
+    isPost: true
   };
 </script>
 
-  <title>about | 路上捡个大西瓜
-  </title>
+  <title>NDT-Normal Distribution Transform算法 | 路上捡个大西瓜</title>
   
 
 
@@ -168,44 +166,90 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
           <div class="content">
             
 
   <div class="posts-expand">
-    
-    
-    
-    <div class="post-block" lang="zh-CN">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.yangxiaoxiao.net.cn/2020/02/25/ndt-matcher/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Xiaoxiao Yang">
+      <meta itemprop="description" content="DuDuBiu的个人小站">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="路上捡个大西瓜">
+    </span>
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          NDT-Normal Distribution Transform算法
+        </h2>
 
-<h2 class="post-title" itemprop="name headline">about
-</h2>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2020-02-25 01:36:08 / 修改时间：06:06:51" itemprop="dateCreated datePublished" datetime="2020-02-25T01:36:08+00:00">2020-02-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a><strong>Reference</strong></h2><p><a href="https://www.cnblogs.com/21207-iHome/p/8039741.html" target="_blank" rel="noopener">NDT（Normal Distributions Transform）算法原理与公式推导</a></p>
+<p>The Three-Dimensional Normal-Distributions Transform, 2009</p>
+<p>The Normal Distribution Transform: A New Approach to Laser Scan Matching, 2003</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
+              <a href="/tags/SLAM/" rel="tag"># SLAM</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/25/Hexo/" rel="prev" title="Hexo使用教程">
+      <i class="fa fa-chevron-left"></i> Hexo使用教程
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/25/hexo-math/" rel="next" title="如何HEXO中使用数学符号方法">
+      如何HEXO中使用数学符号方法 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
   </div>
 
 
@@ -257,6 +301,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.</span> <span class="nav-text">Reference</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
